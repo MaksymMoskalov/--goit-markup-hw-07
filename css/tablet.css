@@ -47,7 +47,27 @@
 /* Hero styles */
 
 .hero {
+  max-width: 768px;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/Dark-bg_tab.jpg);
 }
+
+@media (min-device-pixel-ratio: 2),
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/Dark-bg_tab@2x.jpg);
+  }
+}
+
 .hero-title {
   margin-bottom: 36px;
   max-width: 496px;
@@ -166,35 +186,25 @@
 }
 
 .footer-socials {
-  /* margin-left: 120px; */
 }
 
 .footer-socials .footer-text {
-  font-weight: 500;
-  margin-bottom: 16px;
 }
 
 .footer-socials .social-list {
-  gap: 16px;
 }
 
 .footer-socials .social-icons {
-  width: 24px;
-  height: 24px;
 }
 .footer .social-link {
-  background-color: var(--acsent-color);
 }
 
 .footer .social-link:hover {
-  background-color: #31d0aa;
 }
 .footer .social-link:focus {
-  background-color: #31d0aa;
 }
 
 .footer-form {
-  display: flex;
   flex-direction: row;
   justify-content: space-between;
 
@@ -208,15 +218,6 @@
 
 .form-text {
   text-align: start;
-  margin-bottom: 16px;
-
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--main-background-color);
 }
 
 .footer-input {
@@ -224,49 +225,25 @@
   height: 40px;
   padding-left: 16px;
   margin: 0;
-
-  border: 1px solid var(--main-background-color);
-  border-radius: 4px;
-
-  color: var(--main-background-color);
-  background-color: var(--acsent-background-color);
 }
 .footer-input:focus-visible {
-  outline: none;
 }
 
 .footer-input::placeholder {
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  color: var(--main-background-color);
 }
 
 .submit-btn {
-  display: flex;
-  width: 165px;
-  height: 40px;
-  margin-left: 0;
-  border-radius: 4px;
-  padding: 8px 24px;
-  align-items: center;
-
-  cursor: pointer;
-  color: var(--main-background-color);
-  border-color: transparent;
-  background-color: var(--acsent-color);
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-  font-weight: 500;
 }
 
 .submit-btn:hover,
 .submit-btn:focus {
-  background-color: var(--active-color);
 }
 
 .submit-icon {
-  margin-left: 16px;
+}
+
+/* Modal wd */
+
+.modal {
+  width: 408px;
 }
