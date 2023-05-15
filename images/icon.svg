@@ -1,5 +1,9 @@
 <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
     <defs>
+        <symbol id="icon-charm_menu-hamburger" viewBox="0 0 32 22">
+            <path d="M1.34766 20.0431H30.8861M1.34766 10.7354H30.8861M1.34766 1.42773H30.8861" stroke="#2E2F42"
+                stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
+        </symbol>
         <symbol id="icon-Property" viewBox="0 0 32 32">
             <path
                 d="M4 1h24c1.657 0 3 1.343 3 3v24c0 1.657-1.343 3-3 3h-24c-1.657 0-3-1.343-3-3v-24c0-1.657 1.343-3 3-3z">

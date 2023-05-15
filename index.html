@@ -16,16 +16,26 @@
       href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.css"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="./css/tablet.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="./css/desktop.css"
+      media="screen and (min-width: 1158px)"
+    />
   </head>
 
   <body>
     <!-- Header -->
     <header class="header">
       <div class="container">
+        <a href="./index.html" class="logo link"
+          >Web<span class="header-logo">Studio</span>
+        </a>
         <nav class="header-nav">
-          <a href="./index.html" class="logo link"
-            >Web<span class="header-logo">Studio</span>
-          </a>
           <ul class="nav-list list">
             <li class="nav-item">
               <a href="./index.html" class="nav-link link current">Studio</a>
@@ -52,6 +62,15 @@
             </li>
           </ul>
         </address>
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg class="humb-menu" width="32" height="22">
+            <use href="./images/icon.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <!-- main content -->
@@ -86,7 +105,7 @@
 
             <li class="provide-item">
               <div class="icon-box">
-                <svg class="provide-icon" width="64" height="64">
+                <svg class="provide-icons" width="64" height="64">
                   <use href="./images/icon.svg#icon-clock-1"></use>
                 </svg>
               </div>
@@ -513,6 +532,71 @@
         </form>
       </div>
     </div>
+
+    <!-- Mobile menu -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu">
+        <svg class="modal-icon" width="8" height="8">
+          <use href="./images/icon.svg#icon-close-black"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu list">
+        <li><a href="./index.html" class="link">Studio</a></li>
+        <li><a href="./portfolio.html" class="link">Portfolio</a></li>
+        <li><a href="" class="link">Contacts</a></li>
+      </ul>
+      <ul class="list">
+        <li>
+          <a href="tel:+110001111111" class="link">+11 (000) 111-11-11</a>
+        </li>
+        <li>
+          <a href="mailto:info@devstudio.com" class="link"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <div class="mobile-menu-socials">
+        <p class="footer-text">Social media</p>
+        <ul class="social-list list">
+          <li class="social-item">
+            <a href="" class="social-link link">
+              <svg class="social-icons" width="24" height="24">
+                <use href="./images/icon.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link link">
+              <svg class="social-icons" width="24" height="24">
+                <use href="./images/icon.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link link">
+              <svg class="social-icons" width="24" height="24">
+                <use href="./images/icon.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="" class="social-link link">
+              <svg class="social-icons" width="24" height="24">
+                <use href="./images/icon.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>
