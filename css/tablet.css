@@ -1,5 +1,7 @@
 .container {
   max-width: 768px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /* Header */
@@ -163,6 +165,7 @@
 
 .footer .container {
   display: flex;
+  max-width: 582px;
   flex-direction: row;
   flex-wrap: wrap;
   gap: 72px 24px;
@@ -178,7 +181,6 @@
 
 .footer-motto {
   max-width: 264px;
-  margin-left: 108px;
 }
 
 .footer-text {
@@ -212,7 +214,6 @@
 }
 
 .footer-option {
-  margin-left: 108px;
   max-width: 453px;
 }
 
